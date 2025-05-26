@@ -1,0 +1,241 @@
+body {
+    width: 21cm;
+    height: 29.7cm;
+    background-color: black;
+    font: 14px 'Open Sans';
+    color: rgb(73, 73, 73);
+}
+
+body,
+.article-title {
+    margin: 0 auto 0 auto;
+}
+
+img {
+    width: 14px;
+    height: 14px;
+}
+
+h2 {
+    color: black;
+}
+
+h4 {
+    margin: 10px 0 15px 0;
+}
+
+header, .content, footer{
+    background-color: whitesmoke;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+}
+
+header {
+    height: calc(29.7cm * 0.15)
+}
+
+.presentation, .contact-info {
+    width: 50%;
+}
+
+.name {
+    margin: 14px auto 0 auto;
+}
+
+.position {
+    font-size: 1.2em;
+}
+
+.contact-list{
+    text-align: right;
+    list-style: none;
+}
+
+.contact-list li:nth-last-child(-n + 3){
+    margin-top: 10px;
+}
+
+.contact-list i,
+.contact-list img{
+    padding-left: 5px;
+}
+
+
+.content {
+    height: calc(29.7cm * 0.8);
+    background-color: white;
+    flex-direction: row;
+    justify-content: center;
+}
+
+section {
+    margin-top: 30px;
+}
+
+.section-title{
+    margin-bottom: 10px;
+}
+
+
+
+.left-content,
+.right-content {
+    width: calc(21cm * 0.5)
+}
+
+.left-content {
+    margin-right: 10px;
+    
+}
+
+.right-content {
+    margin-left: 10px;
+}
+
+.content i {
+    padding-right: 10px;
+}
+
+.content li {
+    list-style-type: disc;
+}
+
+.content li::marker {
+    font-size: 1.2em;
+}
+
+.core-concepts > ul,
+.experience > ul {
+    margin: 5px 0 5px 0;
+}
+
+ul > .institution-name,
+ul > .location,
+ul > .role {
+    display: inline-block;
+    list-style-type: none;
+    color: rgb(98, 174, 236);
+}
+
+.location {
+    float: right;
+}
+
+.institution-name, .role{
+    margin-left: -40px;
+}
+
+.degrees-list, .jobs-list{
+    margin-left: 30px;
+}
+
+.degrees-list > li,
+.jobs-list > li {
+    list-style: none;
+}
+
+/* Vertical lines */
+.degrees-list::before,
+.jobs-list::before {
+    content: "";
+    position: absolute;
+    transform: translate(-50%, -10px);
+    width: 0.2px;
+    background-color: rgb(73, 73, 73);
+}
+
+.degrees-list::before {
+    left: 75px;
+    height: 382px;
+}
+.jobs-list::before {
+    right: 334px;
+    height: 690px;
+}
+
+/* Disks */
+.degrees-list > li::before,
+.jobs-list > li::before {
+    content: "";
+    position: absolute;
+    transform: translate(-50%, 50%);
+    border: 5px solid rgb(73, 73, 73);
+    border-radius: 50%;
+}
+
+.degrees-list > li::before {
+    left: 75.4px;  
+}
+
+.jobs-list > li::before {
+    right: 324px;
+}
+
+/* Date ranges */
+.degrees-list li h4::before,
+.jobs-list li h4::before {
+    white-space: pre;
+    position: absolute;
+    text-align: center;
+    font-size: 0.8em;
+    color: rgb(73, 73, 73);
+}
+
+.degrees-list li h4::before {
+    left: 30px;
+    transform: translateY(-25%);
+}
+
+
+.degrees-list li:nth-child(1) h4::before {
+    content: "2011\A |\A 2015";
+}
+
+.degrees-list li:nth-child(2) h4::before {
+    content: "2009\A |\A 2011";
+}
+
+.degrees-list li:nth-child(3) h4::before {
+    content: "2007\A |\A 2009";
+}
+
+.jobs-list li h4::before {
+    right: 340px;
+    transform: translateY(-22%);
+}
+
+.jobs-list li:nth-child(1) h4::before {
+    content: "2017\A Aug\A |\A Now";
+}
+.jobs-list li:nth-child(2) h4::before {
+    content: "2015\A Aug\A |\A 2016\A May";
+}
+.jobs-list li:nth-child(3) h4::before {
+    content: "2016\A Jun\A |\A 2017\A Jul";
+}
+
+.skills > ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.skills li {
+    display: inline-block;
+    background-color: rgb(98, 174, 236);
+    border: thin solid rgb(98, 174, 236);
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+}
+
+
+footer {
+    height: calc(29.7cm * 0.05);
+    align-items: center;
+}
+
+footer span i {
+    padding-left: 5px;
+}
