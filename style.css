@@ -202,7 +202,7 @@ ul > .role {
 }
 
 .jobs-list li h4::before {
-    right: 340px;
+    right: 350px;
     transform: translateY(-22%);
 }
 
